@@ -1,6 +1,6 @@
 {% set name = "perl-sub-exporter" %}
-{% set version = "0.991" %}
-{% set sha256 = "2a95695d35c5d0d5373a7e145c96b9b016113b74e94116835ac05450cae4d445" %}
+{% set version = "0.992" %}
+{% set sha256 = "31d1b7016390528f3ed2cda379f4026a4e7fbad2aa40c8c9a1808961bf642c67" %}
 
 package:
   name: {{ name }}
@@ -12,7 +12,7 @@ source:
 
 build:
   skip: true  # [win]
-  number: 1
+  number: 0
   script:
     - perl Makefile.PL INSTALLDIRS=vendor
     - make
